@@ -4,6 +4,56 @@
 
 This project involves the development of a gesture recognition system using various deep learning models. The objective is to classify different gestures from video sequences. The project explores multiple model architectures, including Conv3D, ConvLSTM, and a CNN + RNN hybrid model, with the goal of achieving the highest possible accuracy on the validation set.
 
+## 🧠 Problem Statement
+
+Imagine you're working as a data scientist at a home electronics company that manufactures cutting-edge smart televisions. The goal is to develop a feature that allows users to control the TV through **hand gestures**, eliminating the need for a remote control. These gestures are captured in real time by a **webcam mounted on the TV**, enabling seamless interaction.
+
+The system is designed to recognize **five distinct gestures**, each mapped to a specific control action:
+
+- 👍 Thumbs Up: Increase volume  
+- 👎 Thumbs Down: Decrease volume  
+- 👈 Left Swipe: Rewind 10 seconds  
+- 👉 Right Swipe: Forward 10 seconds  
+- ✋ Stop: Pause the video  
+
+---
+
+## 🎥 Understanding the Dataset
+
+Each gesture is captured as a **video** comprising **30 sequential image frames**. The dataset includes recordings from multiple users performing gestures under varied conditions. Each video folder contains:
+
+- 30 frames (images) with dimensions of either `360x360` or `120x160`
+- A CSV file entry describing:
+  - Folder name
+  - Gesture label (0 to 4)
+  - Gesture class
+
+The dataset is organized into:
+- `train/`: Training videos and labels  
+- `val/`: Validation set for evaluating model generalization
+
+---
+
+## 🧪 Objective
+
+Your task is to build a deep learning model that can accurately classify gesture videos from the `train` set and perform well on the `val` set. The final model will be evaluated on a separate `test` set (not provided).
+
+To solve this problem, two neural network architectures are recommended:
+1. **3D Convolutional Networks** – to directly extract spatiotemporal features from video frames
+2. **CNN + RNN Stack** – where CNN processes individual frames and RNN captures the temporal dynamics
+
+---
+
+## 📦 Dataset Access Instructions
+
+To set up the data locally:
+```bash
+# Step 1: Download the dataset
+gdown https://drive.google.com/uc?id=1ehyrYBQ5rbQQe6yL4XbLWe3FMvuVUGiL
+
+# Step 2: Unzip the data
+unzip Project_data.zip
+
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Experimentation](#experimentation)
