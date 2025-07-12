@@ -1,5 +1,3 @@
-# gesture-recognition-project
-
 # Gesture Recognition Project
 
 This project involves the development of a gesture recognition system using various deep learning models. The objective is to classify different gestures from video sequences. The project explores multiple model architectures, including Conv3D, ConvLSTM, and a CNN + RNN hybrid model, with the goal of achieving the highest possible accuracy on the validation set.
