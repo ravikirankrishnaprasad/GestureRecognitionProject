@@ -42,26 +42,6 @@ To solve this problem, two neural network architectures are recommended:
 
 ---
 
-## 📦 Dataset Access Instructions
-
-To set up the data locally:
-```bash
-# Step 1: Download the dataset
-gdown https://drive.google.com/uc?id=1ehyrYBQ5rbQQe6yL4XbLWe3FMvuVUGiL
-
-# Step 2: Unzip the data
-unzip Project_data.zip
-
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Experimentation](#experimentation)
-- [Results](#results)
-- [Final Model Selection](#final-model-selection)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Project Overview
 
 The gesture recognition project involves training deep learning models on video sequences to classify different gestures. The project initially started with a baseline Conv3D model and progressively explored different architectures and hyperparameters, including increasing epochs, adjusting batch sizes, and implementing a CNN + RNN hybrid model.
